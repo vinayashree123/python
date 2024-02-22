@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.0.2 (Python 3.11.1 on win32)" generated="20230711 10:18:31.116" rpa="false" schemaversion="3">
+<suite id="s1" name="Assign" source="C:\Users\vnaganur\PycharmProjects\robot_framework\Assign\assign.robot">
+<test id="s1-t1" name="nav from one link to another" line="33">
+<kw name="Open Browser" library="Selenium2Library">
+<arg>https://rahulshettyacademy.com/loginpagePractise/#</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20230711 10:18:31.355" level="INFO">Opening browser 'chrome' to base url 'https://rahulshettyacademy.com/loginpagePractise/#'.</msg>
+<msg timestamp="20230711 10:18:31.370" level="INFO">Executing: C:\Users\vnaganur\PycharmProjects\robot_framework\venv\Lib\site-packages\selenium\webdriver\common\windows\selenium-manager.exe --browser chrome --output json</msg>
+<status status="PASS" starttime="20230711 10:18:31.355" endtime="20230711 10:18:35.191"/>
+</kw>
+<kw name="Go To" library="Selenium2Library">
+<arg>https://rahulshettyacademy.com/documents-request</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<msg timestamp="20230711 10:18:35.192" level="INFO">Opening url 'https://rahulshettyacademy.com/documents-request'</msg>
+<status status="PASS" starttime="20230711 10:18:35.191" endtime="20230711 10:18:38.253"/>
+</kw>
+<kw name="Get Text" library="Selenium2Library">
+<var>${email}</var>
+<arg>xpath=//*[@id="interview-material-container"]/div/div[2]/p[2]/strong/a</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20230711 10:18:38.290" level="INFO">${email} = mentor@rahulshettyacademy.com</msg>
+<status status="PASS" starttime="20230711 10:18:38.253" endtime="20230711 10:18:38.290"/>
+</kw>
+<kw name="Go Back" library="Selenium2Library">
+<doc>Simulates the user clicking the back button on their browser.</doc>
+<status status="PASS" starttime="20230711 10:18:38.290" endtime="20230711 10:18:38.328"/>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<arg>id=username</arg>
+<arg>${email}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230711 10:18:38.328" level="INFO">Typing text 'mentor@rahulshettyacademy.com' into text field 'id=username'.</msg>
+<status status="PASS" starttime="20230711 10:18:38.328" endtime="20230711 10:18:38.489"/>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<arg>id=password</arg>
+<arg>learning</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230711 10:18:38.489" level="INFO">Typing text 'learning' into text field 'id=password'.</msg>
+<status status="PASS" starttime="20230711 10:18:38.489" endtime="20230711 10:18:38.587"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>10s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230711 10:18:48.588" level="INFO">Slept 10 seconds</msg>
+<status status="PASS" starttime="20230711 10:18:38.587" endtime="20230711 10:18:48.588"/>
+</kw>
+<status status="PASS" starttime="20230711 10:18:31.355" endtime="20230711 10:18:48.588"/>
+</test>
+<status status="PASS" starttime="20230711 10:18:31.132" endtime="20230711 10:18:48.595"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Assign">Assign</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

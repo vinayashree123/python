@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.0.2 (Python 3.11.1 on win32)" generated="20231215 17:59:43.206" rpa="false" schemaversion="3">
+<suite id="s1" name="Multiplelink" source="C:\Users\vnaganur\PycharmProjects\robot_framework\2023\multiiple_link\multiplelink.robot">
+<test id="s1-t1" name="example 1" line="5">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>https://www.wikipedia.org/</arg>
+<arg>edge</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20231215 17:59:43.475" level="INFO">Opening browser 'edge' to base url 'https://www.wikipedia.org/'.</msg>
+<msg timestamp="20231215 17:59:46.221" level="INFO">Cannot capture screenshot because no browser is open.</msg>
+<status status="FAIL" starttime="20231215 17:59:43.475" endtime="20231215 17:59:46.222"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>//*[@id="searchInput"]</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="NOT RUN" starttime="20231215 17:59:46.223" endtime="20231215 17:59:46.223"/>
+</kw>
+<status status="FAIL" starttime="20231215 17:59:43.473" endtime="20231215 17:59:46.224">Execution terminated by signal</status>
+</test>
+<test id="s1-t2" name="total link" line="8">
+<tag>robot:exit</tag>
+<status status="FAIL" starttime="20231215 17:59:46.227" endtime="20231215 17:59:46.228">Test execution stopped due to a fatal error.</status>
+</test>
+<test id="s1-t3" name="handle multi link" line="12">
+<tag>robot:exit</tag>
+<status status="FAIL" starttime="20231215 17:59:46.231" endtime="20231215 17:59:46.233">Test execution stopped due to a fatal error.</status>
+</test>
+<status status="FAIL" starttime="20231215 17:59:43.208" endtime="20231215 17:59:46.236"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="3" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="0" fail="1" skip="0" info="combined" combined="NOT robot:exit">NOT robot:exit</stat>
+</tag>
+<suite>
+<stat pass="0" fail="3" skip="0" id="s1" name="Multiplelink">Multiplelink</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

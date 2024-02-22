@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.0.2 (Python 3.11.1 on win32)" generated="20240130 14:59:05.914" rpa="false" schemaversion="3">
+<suite id="s1" name="Interview" source="C:\Users\vnaganur\PycharmProjects\robot_framework\2023\checkbox\interview.robot">
+<test id="s1-t1" name="opening the browser" line="5">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>https://practice.expandtesting.com/checkboxes</arg>
+<arg>edge</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20240130 14:59:06.117" level="INFO">Opening browser 'edge' to base url 'https://practice.expandtesting.com/checkboxes'.</msg>
+<status status="PASS" starttime="20240130 14:59:06.116" endtime="20240130 14:59:10.345"/>
+</kw>
+<kw name="checkbox demo">
+<kw name="Get WebElements" library="SeleniumLibrary">
+<var>@{checkbox}</var>
+<arg>xpath://*[@id="checkboxes"]</arg>
+<doc>Returns a list of WebElement objects matching the ``locator``.</doc>
+<msg timestamp="20240130 14:59:10.365" level="INFO">@{checkbox} = [ &lt;selenium.webdriver.remote.webelement.WebElement (session="6141b64e352bbcdffab068d6430ba176", element="335A5FEDB91058D5BE14E8261EB64F23_element_4")&gt; ]</msg>
+<status status="PASS" starttime="20240130 14:59:10.345" endtime="20240130 14:59:10.365"/>
+</kw>
+<kw name="Select Checkbox" library="SeleniumLibrary">
+<arg>xpath://*[@id="checkbox1"]</arg>
+<doc>Selects the checkbox identified by ``locator``.</doc>
+<msg timestamp="20240130 14:59:10.365" level="INFO">Selecting checkbox 'xpath://*[@id="checkbox1"]'.</msg>
+<status status="PASS" starttime="20240130 14:59:10.365" endtime="20240130 14:59:10.447"/>
+</kw>
+<for flavor="IN">
+<var>${i}</var>
+<value>@{checkbox}</value>
+<iter>
+<var name="${i}">&lt;selenium.webdriver.remote.webelement.WebElement (session="6141b64e352bbcdffab068d6430ba176", element="335A5FEDB91058D5BE14E8261EB64F23_element_4")&gt;</var>
+<kw name="Select Checkbox" library="SeleniumLibrary">
+<arg>${i}</arg>
+<doc>Selects the checkbox identified by ``locator``.</doc>
+<msg timestamp="20240130 14:59:10.447" level="INFO">Selecting checkbox '&lt;selenium.webdriver.remote.webelement.WebElement (session="6141b64e352bbcdffab068d6430ba176", element="335A5FEDB91058D5BE14E8261EB64F23_element_4")&gt;'.</msg>
+<status status="PASS" starttime="20240130 14:59:10.447" endtime="20240130 14:59:10.487"/>
+</kw>
+<kw name="Checkbox Should Be Selected" library="SeleniumLibrary">
+<arg>xpath://*[@id="checkbox1"]</arg>
+<doc>Verifies checkbox ``locator`` is selected/checked.</doc>
+<msg timestamp="20240130 14:59:10.487" level="INFO">Verifying checkbox 'xpath://*[@id="checkbox1"]' is selected.</msg>
+<status status="PASS" starttime="20240130 14:59:10.487" endtime="20240130 14:59:10.518"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20240130 14:59:12.520" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20240130 14:59:10.518" endtime="20240130 14:59:12.520"/>
+</kw>
+<status status="PASS" starttime="20240130 14:59:10.447" endtime="20240130 14:59:12.520"/>
+</iter>
+<status status="PASS" starttime="20240130 14:59:10.447" endtime="20240130 14:59:12.520"/>
+</for>
+<status status="PASS" starttime="20240130 14:59:10.345" endtime="20240130 14:59:12.520"/>
+</kw>
+<status status="PASS" starttime="20240130 14:59:06.115" endtime="20240130 14:59:12.520"/>
+</test>
+<status status="PASS" starttime="20240130 14:59:05.916" endtime="20240130 14:59:12.520"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Interview">Interview</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

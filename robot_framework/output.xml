@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.0.2 (Python 3.11.1 on win32)" generated="20230705 14:49:03.355" rpa="false" schemaversion="3">
+<suite id="s1" name="Outlook" source="C:\Users\vnaganur\PycharmProjects\robot_framework\outlook.robot">
+<test id="s1-t1" name="opening the browser" line="9">
+<kw name="Open Browser" library="Selenium2Library">
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20230705 14:49:03.626" level="INFO">Opening browser 'chrome' to base url 'https://outlook.live.com'.</msg>
+<msg timestamp="20230705 14:49:03.632" level="INFO">Executing: C:\Users\vnaganur\PycharmProjects\robot_framework\venv\Lib\site-packages\selenium\webdriver\common\windows\selenium-manager.exe --browser chrome --output json</msg>
+<status status="PASS" starttime="20230705 14:49:03.625" endtime="20230705 14:49:08.107"/>
+</kw>
+<kw name="Wait Until Page Contains Element" library="Selenium2Library">
+<arg>${SIGNIN_ELEMENT}</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<msg timestamp="20230705 14:49:13.711" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-15.png"&gt;&lt;img src="selenium-screenshot-15.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20230705 14:49:13.711" level="FAIL">Element '= css=body &gt; header &gt; div &gt; aside &gt; div &gt; nav &gt; ul &gt; li:nth-child(2) &gt; a' did not appear in 5 seconds.</msg>
+<status status="FAIL" starttime="20230705 14:49:08.107" endtime="20230705 14:49:13.711"/>
+</kw>
+<status status="FAIL" starttime="20230705 14:49:03.624" endtime="20230705 14:49:13.711">Element '= css=body &gt; header &gt; div &gt; aside &gt; div &gt; nav &gt; ul &gt; li:nth-child(2) &gt; a' did not appear in 5 seconds.</status>
+</test>
+<test id="s1-t2" name="signin" line="12">
+<kw name="Click Button" library="Selenium2Library">
+<arg>${SIGNIN_ELEMENT}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20230705 14:49:13.711" level="INFO">Clicking button '= css=body &gt; header &gt; div &gt; aside &gt; div &gt; nav &gt; ul &gt; li:nth-child(2) &gt; a'.</msg>
+<msg timestamp="20230705 14:49:14.163" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-16.png"&gt;&lt;img src="selenium-screenshot-16.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20230705 14:49:14.163" level="FAIL">Button with locator '= css=body &gt; header &gt; div &gt; aside &gt; div &gt; nav &gt; ul &gt; li:nth-child(2) &gt; a' not found.</msg>
+<status status="FAIL" starttime="20230705 14:49:13.711" endtime="20230705 14:49:14.174"/>
+</kw>
+<status status="FAIL" starttime="20230705 14:49:13.711" endtime="20230705 14:49:14.174">Button with locator '= css=body &gt; header &gt; div &gt; aside &gt; div &gt; nav &gt; ul &gt; li:nth-child(2) &gt; a' not found.</status>
+</test>
+<status status="FAIL" starttime="20230705 14:49:03.366" endtime="20230705 14:49:14.174"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="2" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="2" skip="0" id="s1" name="Outlook">Outlook</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

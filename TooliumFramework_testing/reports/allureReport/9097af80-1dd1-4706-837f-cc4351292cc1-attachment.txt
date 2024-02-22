@@ -1,0 +1,12 @@
+[32mINFO    [0m WebDriverClass:DriverClass.py:12 edge is initializing
+[32mINFO    [0m BaseClass:BasePage.py:24 Web Page Launched with URL : https://www.saucedemo.com/
+[32mINFO    [0m BaseClass:BasePage.py:71 WebElement found with locator value user-name using locatorType id
+[32mINFO    [0m BaseClass:BasePage.py:83 Clicked on WebElement with locator value user-name using locatorType id
+[32mINFO    [0m BaseClass:BasePage.py:71 WebElement found with locator value user-name using locatorType id
+[32mINFO    [0m BaseClass:BasePage.py:96 Sent the text standard_user in WebElement with locator value user-name using locatorType id
+[32mINFO    [0m BaseClass:BasePage.py:71 WebElement found with locator value password using locatorType id
+[32mINFO    [0m BaseClass:BasePage.py:83 Clicked on WebElement with locator value password using locatorType id
+[32mINFO    [0m BaseClass:BasePage.py:71 WebElement found with locator value password using locatorType id
+[32mINFO    [0m BaseClass:BasePage.py:96 Sent the text secret_sauce in WebElement with locator value password using locatorType id
+[32mINFO    [0m BaseClass:BasePage.py:71 WebElement found with locator value login-button using locatorType id
+[32mINFO    [0m BaseClass:BasePage.py:83 Clicked on WebElement with locator value login-button using locatorType id

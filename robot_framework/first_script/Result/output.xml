@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.0.2 (Python 3.11.1 on win32)" generated="20231003 17:18:50.719" rpa="false" schemaversion="3">
+<suite id="s1" name="Main" source="C:\Users\vnaganur\PycharmProjects\robot_framework\first_script\Tests\main.robot">
+<test id="s1-t1" name="this is contain all test suite" line="8">
+<kw name="opening browser" library="common">
+<kw name="Open Browser" library="Selenium2Library">
+<arg>https://www.tutorialspoint.com</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20231003 17:18:51.166" level="INFO">Opening browser 'chrome' to base url 'https://www.tutorialspoint.com'.</msg>
+<msg timestamp="20231003 17:18:51.182" level="INFO">Executing: C:\Users\vnaganur\PycharmProjects\robot_framework\venv\Lib\site-packages\selenium\webdriver\common\windows\selenium-manager.exe --browser chrome --output json</msg>
+<msg timestamp="20231003 17:18:58.445" level="INFO">Cannot capture screenshot because no browser is open.</msg>
+<msg timestamp="20231003 17:18:58.446" level="FAIL">SessionNotCreatedException: Message: session not created: This version of ChromeDriver only supports Chrome version 114
+Current browser version is 117.0.5938.132 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe
+Stacktrace:
+Backtrace:
+	GetHandleVerifier [0x00F3A813+48355]
+	(No symbol) [0x00ECC4B1]
+	(No symbol) [0x00DD5358]
+	(No symbol) [0x00DF61AC]
+	(No symbol) [0x00DF1EF3]
+	(No symbol) [0x00DF0579]
+	(No symbol) [0x00E20C55]
+	(No symbol) [0x00E2093C]
+	(No symbol) [0x00E1A536]
+	(No symbol) [0x00DF82DC]
+	(No symbol) [0x00DF93DD]
+	GetHandleVerifier [0x0119AABD+2539405]
+	GetHandleVerifier [0x011DA78F+2800735]
+	GetHandleVerifier [0x011D456C+2775612]
+	GetHandleVerifier [0x00FC51E0+616112]
+	(No symbol) [0x00ED5F8C]
+	(No symbol) [0x00ED2328]
+	(No symbol) [0x00ED240B]
+	(No symbol) [0x00EC4FF7]
+	BaseThreadInitThunk [0x763F6BA9+25]
+	RtlGetFullPathName_UEx [0x777B8F9F+1215]
+	RtlGetFullPathName_UEx [0x777B8F6D+1165]
+</msg>
+<status status="FAIL" starttime="20231003 17:18:51.166" endtime="20231003 17:18:58.475"/>
+</kw>
+<status status="FAIL" starttime="20231003 17:18:51.165" endtime="20231003 17:18:58.476"/>
+</kw>
+<kw name="click on login" library="tutorial">
+<status status="NOT RUN" starttime="20231003 17:18:58.477" endtime="20231003 17:18:58.477"/>
+</kw>
+<kw name="enter email and password" library="tutorial">
+<status status="NOT RUN" starttime="20231003 17:18:58.477" endtime="20231003 17:18:58.478"/>
+</kw>
+<kw name="click user login" library="tutorial">
+<status status="NOT RUN" starttime="20231003 17:18:58.478" endtime="20231003 17:18:58.478"/>
+</kw>
+<kw name="closeing browser" library="common">
+<status status="NOT RUN" starttime="20231003 17:18:58.479" endtime="20231003 17:18:58.479"/>
+</kw>
+<status status="FAIL" starttime="20231003 17:18:51.165" endtime="20231003 17:18:58.480">SessionNotCreatedException: Message: session not created: This version of ChromeDriver only supports Chrome version 114
+Current browser version is 117.0.5938.132 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe
+Stacktrace:
+Backtrace:
+	GetHandleVerifier [0x00F3A813+48355]
+	(No symbol) [0x00ECC4B1]
+	(No symbol) [0x00DD5358]
+	(No symbol) [0x00DF61AC]
+	(No symbol) [0x00DF1EF3]
+	(No symbol) [0x00DF0579]
+	(No symbol) [0x00E20C55]
+	(No symbol) [0x00E2093C]
+	(No symbol) [0x00E1A536]
+	(No symbol) [0x00DF82DC]
+	(No symbol) [0x00DF93DD]
+	GetHandleVerifier [0x0119AABD+2539405]
+	GetHandleVerifier [0x011DA78F+2800735]
+	GetHandleVerifier [0x011D456C+2775612]
+	GetHandleVerifier [0x00FC51E0+616112]
+	(No symbol) [0x00ED5F8C]
+	(No symbol) [0x00ED2328]
+	(No symbol) [0x00ED240B]
+	(No symbol) [0x00EC4FF7]
+	BaseThreadInitThunk [0x763F6BA9+25]
+	RtlGetFullPathName_UEx [0x777B8F9F+1215]
+	RtlGetFullPathName_UEx [0x777B8F6D+1165]
+</status>
+</test>
+<doc>this one has basic test suite</doc>
+<status status="FAIL" starttime="20231003 17:18:50.723" endtime="20231003 17:18:58.484"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="Main">Main</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

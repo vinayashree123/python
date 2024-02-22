@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.0.2 (Python 3.11.1 on win32)" generated="20230703 12:32:42.449" rpa="false" schemaversion="3">
+<suite id="s1" name="Pass List Var" source="C:\Users\vnaganur\PycharmProjects\robot_framework\pass_keyword_var\Tests\pass_list_var.robot">
+<test id="s1-t1" name="this is first test" line="5">
+<kw name="Set Variable" library="BuiltIn">
+<var>@{url &amp; browser}</var>
+<arg>http://www.google.com</arg>
+<arg>chrome</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<msg timestamp="20230703 12:32:42.609" level="INFO">@{url &amp; browser} = [ http://www.google.com | chrome ]</msg>
+<status status="PASS" starttime="20230703 12:32:42.609" endtime="20230703 12:32:42.609"/>
+</kw>
+<kw name="begin to test">
+<arg>@{url &amp; browser}</arg>
+<kw name="Open Browser" library="Selenium2Library">
+<arg>@{url &amp; browser} [0]</arg>
+<arg>@{url &amp; browser} [1]</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20230703 12:32:42.610" level="INFO">Opening browser '['http://www.google.com', 'chrome'] [1]' to base url '['http://www.google.com', 'chrome'] [0]'.</msg>
+<msg timestamp="20230703 12:32:42.610" level="INFO">Cannot capture screenshot because no browser is open.</msg>
+<msg timestamp="20230703 12:32:42.610" level="FAIL">ValueError: ['http://www.google.com','chrome'][1] is not a supported browser.</msg>
+<status status="FAIL" starttime="20230703 12:32:42.610" endtime="20230703 12:32:42.612"/>
+</kw>
+<kw name="Close Browser" library="Selenium2Library">
+<doc>Closes the current browser.</doc>
+<status status="NOT RUN" starttime="20230703 12:32:42.612" endtime="20230703 12:32:42.612"/>
+</kw>
+<status status="FAIL" starttime="20230703 12:32:42.610" endtime="20230703 12:32:42.612"/>
+</kw>
+<status status="FAIL" starttime="20230703 12:32:42.609" endtime="20230703 12:32:42.613">ValueError: ['http://www.google.com','chrome'][1] is not a supported browser.</status>
+</test>
+<status status="FAIL" starttime="20230703 12:32:42.451" endtime="20230703 12:32:42.614"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="Pass List Var">Pass List Var</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

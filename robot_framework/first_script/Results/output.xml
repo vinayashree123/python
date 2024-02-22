@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.0.2 (Python 3.11.1 on win32)" generated="20231016 15:50:51.633" rpa="false" schemaversion="3">
+<suite id="s1" name="Test" source="C:\Users\vnaganur\PycharmProjects\robot_framework\first_script\Tests\test.robot">
+<test id="s1-t1" name="this is first test case" line="4">
+<kw name="Log" library="BuiltIn">
+<arg>start case</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20231016 15:50:52.010" level="INFO">start case</msg>
+<status status="PASS" starttime="20231016 15:50:52.010" endtime="20231016 15:50:52.010"/>
+</kw>
+<kw name="Set Selenium Speed" library="Selenium2Library">
+<arg>.2s</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="PASS" starttime="20231016 15:50:52.010" endtime="20231016 15:50:52.010"/>
+</kw>
+<kw name="Set Selenium Timeout" library="Selenium2Library">
+<arg>5s</arg>
+<doc>Sets the timeout that is used by various keywords.</doc>
+<status status="PASS" starttime="20231016 15:50:52.010" endtime="20231016 15:50:52.010"/>
+</kw>
+<kw name="Open Browser" library="Selenium2Library">
+<arg>https://www.google.com</arg>
+<arg>edge</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20231016 15:50:52.026" level="INFO">Opening browser 'edge' to base url 'https://www.google.com'.</msg>
+<msg timestamp="20231016 15:50:52.026" level="INFO">Executing: C:\Users\vnaganur\PycharmProjects\robot_framework\venv\Lib\site-packages\selenium\webdriver\common\windows\selenium-manager.exe --browser edge --output json</msg>
+<status status="PASS" starttime="20231016 15:50:52.026" endtime="20231016 15:50:57.139"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20231016 15:51:00.140" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20231016 15:50:57.139" endtime="20231016 15:51:00.140"/>
+</kw>
+<kw name="Set Window Position" library="Selenium2Library">
+<arg>x=341</arg>
+<arg>y=169</arg>
+<doc>Sets window position using ``x`` and ``y`` coordinates.</doc>
+<status status="PASS" starttime="20231016 15:51:00.140" endtime="20231016 15:51:00.466"/>
+</kw>
+<kw name="Set Window Size" library="Selenium2Library">
+<arg>width=1935</arg>
+<arg>height=1090</arg>
+<doc>Sets current windows size to given ``width`` and ``height``.</doc>
+<status status="PASS" starttime="20231016 15:51:00.466" endtime="20231016 15:51:00.820"/>
+</kw>
+<kw name="Close Browser" library="Selenium2Library">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20231016 15:51:00.820" endtime="20231016 15:51:03.222"/>
+</kw>
+<doc>this is first test case</doc>
+<tag>1006 smoke contact</tag>
+<status status="PASS" starttime="20231016 15:50:52.010" endtime="20231016 15:51:03.222"/>
+</test>
+<status status="PASS" starttime="20231016 15:50:51.633" endtime="20231016 15:51:03.226"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="1" fail="0" skip="0">1006 smoke contact</stat>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Test">Test</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.0.2 (Python 3.11.1 on win32)" generated="20231017 15:59:50.838" rpa="false" schemaversion="3">
+<suite id="s1" name="Keyword" source="C:\Users\vnaganur\PycharmProjects\robot_framework\Keyword-demo\keyword.robot">
+<test id="s1-t1" name="test case 1" line="4">
+<kw name="Do something">
+<kw name="Log" library="BuiltIn">
+<arg>iam doing somthing...</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20231017 15:59:50.894" level="INFO">iam doing somthing...</msg>
+<status status="PASS" starttime="20231017 15:59:50.894" endtime="20231017 15:59:50.895"/>
+</kw>
+<status status="PASS" starttime="20231017 15:59:50.894" endtime="20231017 15:59:50.895"/>
+</kw>
+<kw name="Do another thing">
+<kw name="Log" library="BuiltIn">
+<arg>iam doing another thing</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20231017 15:59:50.896" level="INFO">iam doing another thing</msg>
+<status status="PASS" starttime="20231017 15:59:50.896" endtime="20231017 15:59:50.896"/>
+</kw>
+<status status="PASS" starttime="20231017 15:59:50.896" endtime="20231017 15:59:50.896"/>
+</kw>
+<status status="PASS" starttime="20231017 15:59:50.893" endtime="20231017 15:59:50.897"/>
+</test>
+<test id="s1-t2" name="test case 2" line="7">
+<kw name="Do another thing">
+<kw name="Log" library="BuiltIn">
+<arg>iam doing another thing</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20231017 15:59:50.900" level="INFO">iam doing another thing</msg>
+<status status="PASS" starttime="20231017 15:59:50.900" endtime="20231017 15:59:50.900"/>
+</kw>
+<status status="PASS" starttime="20231017 15:59:50.900" endtime="20231017 15:59:50.900"/>
+</kw>
+<kw name="do something else">
+<kw name="Log" library="BuiltIn">
+<arg>iam doing something else</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20231017 15:59:50.901" level="INFO">iam doing something else</msg>
+<status status="PASS" starttime="20231017 15:59:50.901" endtime="20231017 15:59:50.901"/>
+</kw>
+<status status="PASS" starttime="20231017 15:59:50.901" endtime="20231017 15:59:50.902"/>
+</kw>
+<status status="PASS" starttime="20231017 15:59:50.899" endtime="20231017 15:59:50.902"/>
+</test>
+<status status="PASS" starttime="20231017 15:59:50.842" endtime="20231017 15:59:50.904"/>
+</suite>
+<statistics>
+<total>
+<stat pass="2" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="2" fail="0" skip="0" id="s1" name="Keyword">Keyword</stat>
+</suite>
+</statistics>
+<errors>
+<msg timestamp="20231017 15:59:50.889" level="ERROR">Error in file 'C:\Users\vnaganur\PycharmProjects\robot_framework\Keyword-demo\keyword.robot' on line 2: Importing library 'selenium2library' failed: ModuleNotFoundError: No module named 'selenium2library'
+Traceback (most recent call last):
+  None
+PYTHONPATH:
+  C:\Users\vnaganur\PycharmProjects\robot_framework\venv\Scripts\robot.exe
+  C:\Program Files\Python311\python311.zip
+  C:\Program Files\Python311\DLLs
+  C:\Program Files\Python311\Lib
+  C:\Program Files\Python311
+  C:\Users\vnaganur\PycharmProjects\robot_framework\venv
+  C:\Users\vnaganur\PycharmProjects\robot_framework\venv\Lib\site-packages</msg>
+</errors>
+</robot>

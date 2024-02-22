@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.0.2 (Python 3.11.1 on win32)" generated="20230711 15:02:14.682" rpa="false" schemaversion="3">
+<suite id="s1" name="Python" source="C:\Users\vnaganur\PycharmProjects\robot_framework\Builtin\python.robot">
+<test id="s1-t1" name="Run Python Script" line="4">
+<kw name="Run Process">
+<var>${output}</var>
+<arg>C:\Users\vnaganur\PycharmProjects\robot_framework\Builtin\python.py</arg>
+<arg>arg1 arg2</arg>
+<msg timestamp="20230711 15:02:14.731" level="FAIL">No keyword with name 'Run Process' found. Did you try using keyword 'OperatingSystem.Run' and forgot to use enough whitespace between keyword and arguments?</msg>
+<status status="FAIL" starttime="20230711 15:02:14.731" endtime="20230711 15:02:14.731"/>
+</kw>
+<kw name="Log ${output.stdout}">
+<status status="NOT RUN" starttime="20230711 15:02:14.747" endtime="20230711 15:02:14.747"/>
+</kw>
+<kw name="Log ${output.stderr}">
+<status status="NOT RUN" starttime="20230711 15:02:14.747" endtime="20230711 15:02:14.747"/>
+</kw>
+<status status="FAIL" starttime="20230711 15:02:14.731" endtime="20230711 15:02:14.747">No keyword with name 'Run Process' found. Did you try using keyword 'OperatingSystem.Run' and forgot to use enough whitespace between keyword and arguments?</status>
+</test>
+<status status="FAIL" starttime="20230711 15:02:14.682" endtime="20230711 15:02:14.747"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="Python">Python</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.0.2 (Python 3.11.1 on win32)" generated="20231003 16:11:17.503" rpa="false" schemaversion="3">
+<suite id="s1" name="Sample" source="C:\Users\vnaganur\PycharmProjects\robot_framework\first_script\Tests\sample.robot">
+<test id="s1-t1" name="Sample Test Case" line="8">
+<kw name="Open Browser" library="Selenium2Library">
+<arg>http://www.google.com</arg>
+<arg>MicrosoftEdge</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20231003 16:11:17.706" level="INFO">Opening browser 'MicrosoftEdge' to base url 'http://www.google.com'.</msg>
+<msg timestamp="20231003 16:11:17.706" level="INFO">Cannot capture screenshot because no browser is open.</msg>
+<msg timestamp="20231003 16:11:17.706" level="FAIL">ValueError: microsoftedge is not a supported browser.</msg>
+<status status="FAIL" starttime="20231003 16:11:17.706" endtime="20231003 16:11:17.706"/>
+</kw>
+<kw name="Close Browser" library="Selenium2Library">
+<doc>Closes the current browser.</doc>
+<status status="NOT RUN" starttime="20231003 16:11:17.722" endtime="20231003 16:11:17.722"/>
+</kw>
+<doc>Google Test</doc>
+<tag>regression</tag>
+<status status="FAIL" starttime="20231003 16:11:17.706" endtime="20231003 16:11:17.722">ValueError: microsoftedge is not a supported browser.</status>
+</test>
+<status status="FAIL" starttime="20231003 16:11:17.518" endtime="20231003 16:11:17.722"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="0" fail="1" skip="0">regression</stat>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="Sample">Sample</stat>
+</suite>
+</statistics>
+<errors>
+<msg timestamp="20231003 16:11:17.706" level="ERROR">Error in file 'C:\Users\vnaganur\PycharmProjects\robot_framework\first_script\Tests\sample.robot' on line 3: Importing library 'selenium2library' failed: ModuleNotFoundError: No module named 'selenium2library'
+Traceback (most recent call last):
+  None
+PYTHONPATH:
+  C:\Users\vnaganur\PycharmProjects\robot_framework\venv\Scripts\robot.exe
+  C:\Program Files\Python311\python311.zip
+  C:\Program Files\Python311\DLLs
+  C:\Program Files\Python311\Lib
+  C:\Program Files\Python311
+  C:\Users\vnaganur\PycharmProjects\robot_framework\venv
+  C:\Users\vnaganur\PycharmProjects\robot_framework\venv\Lib\site-packages</msg>
+</errors>
+</robot>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.0.2 (Python 3.11.1 on win32)" generated="20231016 18:29:07.141" rpa="false" schemaversion="3">
+<suite id="s1" name="Sample" source="C:\Users\vnaganur\PycharmProjects\robot_framework\2023\sample.robot">
+<test id="s1-t1" name="First Test case" line="5">
+<kw name="Log" library="BuiltIn">
+<arg>basic test case</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20231016 18:29:07.390" level="INFO">basic test case</msg>
+<status status="PASS" starttime="20231016 18:29:07.390" endtime="20231016 18:29:07.390"/>
+</kw>
+<kw name="Open Browser" library="Selenium2Library">
+<arg>https://gmail.com</arg>
+<arg>edge</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20231016 18:29:07.390" level="INFO">Opening browser 'edge' to base url 'https://gmail.com'.</msg>
+<msg timestamp="20231016 18:29:07.390" level="INFO">Cannot capture screenshot because no browser is open.</msg>
+<msg timestamp="20231016 18:29:07.390" level="FAIL">TypeError: WebDriver.__init__() got an unexpected keyword argument 'service_log_path'</msg>
+<status status="FAIL" starttime="20231016 18:29:07.390" endtime="20231016 18:29:07.390"/>
+</kw>
+<kw name="Close Browser" library="Selenium2Library">
+<doc>Closes the current browser.</doc>
+<status status="NOT RUN" starttime="20231016 18:29:07.390" endtime="20231016 18:29:07.390"/>
+</kw>
+<status status="FAIL" starttime="20231016 18:29:07.390" endtime="20231016 18:29:07.390">TypeError: WebDriver.__init__() got an unexpected keyword argument 'service_log_path'</status>
+</test>
+<status status="FAIL" starttime="20231016 18:29:07.141" endtime="20231016 18:29:07.406"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="Sample">Sample</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

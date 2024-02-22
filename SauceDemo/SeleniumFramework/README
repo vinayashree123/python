@@ -1,0 +1,5 @@
+To Generate HTML Report
+$pip install pytest-html
+$ pytest --html=C:\Users\vnaganur\PycharmProjects\SauceDemo\SeleniumFramework\reports\report.html .\test_loginPage.py
+
+

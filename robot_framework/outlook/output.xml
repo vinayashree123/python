@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.0.2 (Python 3.11.1 on win32)" generated="20230705 15:30:32.570" rpa="false" schemaversion="3">
+<suite id="s1" name="Outlook" source="C:\Users\vnaganur\PycharmProjects\robot_framework\outlook\outlook.robot">
+<test id="s1-t1" name="opening the browser" line="9">
+<kw name="Open Browser" library="Selenium2Library">
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20230705 15:30:32.755" level="INFO">Opening browser 'chrome' to base url 'https://outlook.live.com'.</msg>
+<msg timestamp="20230705 15:30:32.755" level="INFO">Executing: C:\Users\vnaganur\PycharmProjects\robot_framework\venv\Lib\site-packages\selenium\webdriver\common\windows\selenium-manager.exe --browser chrome --output json</msg>
+<status status="PASS" starttime="20230705 15:30:32.755" endtime="20230705 15:30:36.545"/>
+</kw>
+<kw name="Wait Until Page Contains Element" library="Selenium2Library">
+<arg>xpath=/html/body/header/div/aside/div/nav/ul/li[2]/a</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20230705 15:30:36.545" endtime="20230705 15:30:36.557"/>
+</kw>
+<status status="PASS" starttime="20230705 15:30:32.755" endtime="20230705 15:30:36.557"/>
+</test>
+<test id="s1-t2" name="signin" line="12">
+<kw name="Click Link" library="Selenium2Library">
+<arg>xpath=/html/body/header/div/aside/div/nav/ul/li[2]/a</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<msg timestamp="20230705 15:30:36.560" level="INFO">Clicking link 'xpath=/html/body/header/div/aside/div/nav/ul/li[2]/a'.</msg>
+<status status="PASS" starttime="20230705 15:30:36.560" endtime="20230705 15:30:37.770"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230705 15:30:42.770" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20230705 15:30:37.770" endtime="20230705 15:30:42.770"/>
+</kw>
+<status status="PASS" starttime="20230705 15:30:36.559" endtime="20230705 15:30:42.771"/>
+</test>
+<test id="s1-t3" name="valid credentials" line="15">
+<kw name="Input Text" library="Selenium2Library">
+<arg>css=#i0116</arg>
+<arg>vinayashree.naganuri@capgemini.com</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230705 15:30:42.771" level="INFO">Typing text 'vinayashree.naganuri@capgemini.com' into text field 'css=#i0116'.</msg>
+<status status="PASS" starttime="20230705 15:30:42.771" endtime="20230705 15:30:42.877"/>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<arg>xpath=//*[@id="idSIButton9"]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230705 15:30:42.877" level="INFO">Clicking element 'xpath=//*[@id="idSIButton9"]'.</msg>
+<status status="PASS" starttime="20230705 15:30:42.877" endtime="20230705 15:30:42.933"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>15s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230705 15:30:57.934" level="INFO">Slept 15 seconds</msg>
+<status status="PASS" starttime="20230705 15:30:42.934" endtime="20230705 15:30:57.934"/>
+</kw>
+<kw name="Wait Until Page Contains Element" library="Selenium2Library">
+<arg>xpath=//*[@id="id__173"]</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<msg timestamp="20230705 15:31:03.219" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-6.png"&gt;&lt;img src="selenium-screenshot-6.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20230705 15:31:03.219" level="FAIL">Element 'xpath=//*[@id="id__173"]' did not appear in 5 seconds.</msg>
+<status status="FAIL" starttime="20230705 15:30:57.935" endtime="20230705 15:31:03.219"/>
+</kw>
+<status status="FAIL" starttime="20230705 15:30:42.771" endtime="20230705 15:31:03.219">Element 'xpath=//*[@id="id__173"]' did not appear in 5 seconds.</status>
+</test>
+<status status="FAIL" starttime="20230705 15:30:32.570" endtime="20230705 15:31:03.219"/>
+</suite>
+<statistics>
+<total>
+<stat pass="2" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="2" fail="1" skip="0" id="s1" name="Outlook">Outlook</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.0.2 (Python 3.11.1 on win32)" generated="20230705 11:07:22.665" rpa="false" schemaversion="3">
+<suite id="s1" name="Os" source="C:\Users\vnaganur\PycharmProjects\robot_framework\operating_system\os.robot">
+<test id="s1-t1" name="create base directory" line="11">
+<kw name="Create Directory" library="OperatingSystem">
+<arg>${out_dir}</arg>
+<doc>Creates the specified directory.</doc>
+<msg timestamp="20230705 11:07:22.689" level="INFO" html="true">Directory '&lt;a href="file://C:\Users\vnaganur\PycharmProjects\robot_framework\operating_system\outputs"&gt;C:\Users\vnaganur\PycharmProjects\robot_framework\operating_system\outputs&lt;/a&gt;' already exists.</msg>
+<status status="PASS" starttime="20230705 11:07:22.689" endtime="20230705 11:07:22.689"/>
+</kw>
+<kw name="Should Exist" library="OperatingSystem">
+<arg>${out_dir}</arg>
+<doc>Fails unless the given path (file or directory) exists.</doc>
+<msg timestamp="20230705 11:07:22.690" level="INFO" html="true">Path '&lt;a href="file://C:\Users\vnaganur\PycharmProjects\robot_framework\operating_system\outputs"&gt;C:\Users\vnaganur\PycharmProjects\robot_framework\operating_system\outputs&lt;/a&gt;' exists.</msg>
+<status status="PASS" starttime="20230705 11:07:22.690" endtime="20230705 11:07:22.690"/>
+</kw>
+<status status="PASS" starttime="20230705 11:07:22.688" endtime="20230705 11:07:22.690"/>
+</test>
+<test id="s1-t2" name="create Directory 1" line="14">
+<kw name="Join Path" library="OperatingSystem">
+<var>${dir_path}</var>
+<arg>${out_dir}</arg>
+<arg>${dir_1}</arg>
+<doc>Joins the given path part(s) to the given base path.</doc>
+<msg timestamp="20230705 11:07:22.693" level="INFO">${dir_path} = outputs\first_dir</msg>
+<status status="PASS" starttime="20230705 11:07:22.693" endtime="20230705 11:07:22.693"/>
+</kw>
+<kw name="Create Directory" library="OperatingSystem">
+<arg>${dir_path}</arg>
+<doc>Creates the specified directory.</doc>
+<msg timestamp="20230705 11:07:22.693" level="INFO" html="true">Directory '&lt;a href="file://C:\Users\vnaganur\PycharmProjects\robot_framework\operating_system\outputs\first_dir"&gt;C:\Users\vnaganur\PycharmProjects\robot_framework\operating_system\outputs\first_dir&lt;/a&gt;' already exists.</msg>
+<status status="PASS" starttime="20230705 11:07:22.693" endtime="20230705 11:07:22.693"/>
+</kw>
+<kw name="Should Exist" library="OperatingSystem">
+<arg>${dir_path}</arg>
+<doc>Fails unless the given path (file or directory) exists.</doc>
+<msg timestamp="20230705 11:07:22.694" level="INFO" html="true">Path '&lt;a href="file://C:\Users\vnaganur\PycharmProjects\robot_framework\operating_system\outputs\first_dir"&gt;C:\Users\vnaganur\PycharmProjects\robot_framework\operating_system\outputs\first_dir&lt;/a&gt;' exists.</msg>
+<status status="PASS" starttime="20230705 11:07:22.693" endtime="20230705 11:07:22.694"/>
+</kw>
+<status status="PASS" starttime="20230705 11:07:22.692" endtime="20230705 11:07:22.694"/>
+</test>
+<test id="s1-t3" name="create Directory 2" line="18">
+<kw name="Join Path" library="OperatingSystem">
+<var>${dir_path}</var>
+<arg>${out_dir}</arg>
+<arg>${dir_2}</arg>
+<doc>Joins the given path part(s) to the given base path.</doc>
+<msg timestamp="20230705 11:07:22.696" level="INFO">${dir_path} = outputs\second_dir</msg>
+<status status="PASS" starttime="20230705 11:07:22.695" endtime="20230705 11:07:22.696"/>
+</kw>
+<kw name="Create Directory" library="OperatingSystem">
+<arg>${dir_path}</arg>
+<doc>Creates the specified directory.</doc>
+<msg timestamp="20230705 11:07:22.696" level="INFO" html="true">Directory '&lt;a href="file://C:\Users\vnaganur\PycharmProjects\robot_framework\operating_system\outputs\second_dir"&gt;C:\Users\vnaganur\PycharmProjects\robot_framework\operating_system\outputs\second_dir&lt;/a&gt;' already exists.</msg>
+<status status="PASS" starttime="20230705 11:07:22.696" endtime="20230705 11:07:22.696"/>
+</kw>
+<kw name="Should Exist" library="OperatingSystem">
+<arg>${dir_path}</arg>
+<doc>Fails unless the given path (file or directory) exists.</doc>
+<msg timestamp="20230705 11:07:22.697" level="INFO" html="true">Path '&lt;a href="file://C:\Users\vnaganur\PycharmProjects\robot_framework\operating_system\outputs\second_dir"&gt;C:\Users\vnaganur\PycharmProjects\robot_framework\operating_system\outputs\second_dir&lt;/a&gt;' exists.</msg>
+<status status="PASS" starttime="20230705 11:07:22.697" endtime="20230705 11:07:22.697"/>
+</kw>
+<status status="PASS" starttime="20230705 11:07:22.695" endtime="20230705 11:07:22.697"/>
+</test>
+<test id="s1-t4" name="create first file" line="22">
+<kw name="Join Path" library="OperatingSystem">
+<var>${file_path}</var>
+<arg>${out_dir}</arg>
+<arg>${dir_1}</arg>
+<arg>${file_1}</arg>
+<doc>Joins the given path part(s) to the given base path.</doc>
+<msg timestamp="20230705 11:07:22.698" level="INFO">${file_path} = outputs\first_dir\first_file</msg>
+<status status="PASS" starttime="20230705 11:07:22.698" endtime="20230705 11:07:22.698"/>
+</kw>
+<kw name="Create File" library="OperatingSystem">
+<arg>${file_path}</arg>
+<arg>this is first file</arg>
+<doc>Creates a file with the given content and encoding.</doc>
+<msg timestamp="20230705 11:07:22.700" level="INFO" html="true">Created file '&lt;a href="file://C:\Users\vnaganur\PycharmProjects\robot_framework\operating_system\outputs\first_dir\first_file"&gt;C:\Users\vnaganur\PycharmProjects\robot_framework\operating_system\outputs\first_dir\first_file&lt;/a&gt;'.</msg>
+<status status="PASS" starttime="20230705 11:07:22.700" endtime="20230705 11:07:22.701"/>
+</kw>
+<kw name="Should Exist" library="OperatingSystem">
+<arg>${file_path}</arg>
+<doc>Fails unless the given path (file or directory) exists.</doc>
+<msg timestamp="20230705 11:07:22.701" level="INFO" html="true">Path '&lt;a href="file://C:\Users\vnaganur\PycharmProjects\robot_framework\operating_system\outputs\first_dir\first_file"&gt;C:\Users\vnaganur\PycharmProjects\robot_framework\operating_system\outputs\first_dir\first_file&lt;/a&gt;' exists.</msg>
+<status status="PASS" starttime="20230705 11:07:22.701" endtime="20230705 11:07:22.701"/>
+</kw>
+<status status="PASS" starttime="20230705 11:07:22.698" endtime="20230705 11:07:22.702"/>
+</test>
+<test id="s1-t5" name="create second file" line="26">
+<kw name="Join Path" library="OperatingSystem">
+<var>${file_path}</var>
+<arg>${out_dir}</arg>
+<arg>${dir_2}</arg>
+<arg>${file_2}</arg>
+<doc>Joins the given path part(s) to the given base path.</doc>
+<msg timestamp="20230705 11:07:22.703" level="INFO">${file_path} = outputs\second_dir\second_file</msg>
+<status status="PASS" starttime="20230705 11:07:22.703" endtime="20230705 11:07:22.703"/>
+</kw>
+<kw name="Create File" library="OperatingSystem">
+<arg>${file_path}</arg>
+<arg>this is second file</arg>
+<doc>Creates a file with the given content and encoding.</doc>
+<msg timestamp="20230705 11:07:22.704" level="INFO" html="true">Created file '&lt;a href="file://C:\Users\vnaganur\PycharmProjects\robot_framework\operating_system\outputs\second_dir\second_file"&gt;C:\Users\vnaganur\PycharmProjects\robot_framework\operating_system\outputs\second_dir\second_file&lt;/a&gt;'.</msg>
+<status status="PASS" starttime="20230705 11:07:22.704" endtime="20230705 11:07:22.704"/>
+</kw>
+<kw name="Should Exist" library="OperatingSystem">
+<arg>${file_path}</arg>
+<doc>Fails unless the given path (file or directory) exists.</doc>
+<msg timestamp="20230705 11:07:22.705" level="INFO" html="true">Path '&lt;a href="file://C:\Users\vnaganur\PycharmProjects\robot_framework\operating_system\outputs\second_dir\second_file"&gt;C:\Users\vnaganur\PycharmProjects\robot_framework\operating_system\outputs\second_dir\second_file&lt;/a&gt;' exists.</msg>
+<status status="PASS" starttime="20230705 11:07:22.705" endtime="20230705 11:07:22.705"/>
+</kw>
+<status status="PASS" starttime="20230705 11:07:22.703" endtime="20230705 11:07:22.705"/>
+</test>
+<test id="s1-t6" name="create third file" line="30">
+<kw name="Join Path" library="OperatingSystem">
+<var>${file_path}</var>
+<arg>${out_dir}</arg>
+<arg>${dir_2}</arg>
+<arg>${file_3}</arg>
+<doc>Joins the given path part(s) to the given base path.</doc>
+<msg timestamp="20230705 11:07:22.708" level="INFO">${file_path} = outputs\second_dir\third_file</msg>
+<status status="PASS" starttime="20230705 11:07:22.707" endtime="20230705 11:07:22.708"/>
+</kw>
+<kw name="Create File" library="OperatingSystem">
+<arg>${file_path}</arg>
+<arg>this is third file</arg>
+<doc>Creates a file with the given content and encoding.</doc>
+<msg timestamp="20230705 11:07:22.710" level="INFO" html="true">Created file '&lt;a href="file://C:\Users\vnaganur\PycharmProjects\robot_framework\operating_system\outputs\second_dir\third_file"&gt;C:\Users\vnaganur\PycharmProjects\robot_framework\operating_system\outputs\second_dir\third_file&lt;/a&gt;'.</msg>
+<status status="PASS" starttime="20230705 11:07:22.708" endtime="20230705 11:07:22.710"/>
+</kw>
+<kw name="Should Exist" library="OperatingSystem">
+<arg>${file_path}</arg>
+<doc>Fails unless the given path (file or directory) exists.</doc>
+<msg timestamp="20230705 11:07:22.711" level="INFO" html="true">Path '&lt;a href="file://C:\Users\vnaganur\PycharmProjects\robot_framework\operating_system\outputs\second_dir\third_file"&gt;C:\Users\vnaganur\PycharmProjects\robot_framework\operating_system\outputs\second_dir\third_file&lt;/a&gt;' exists.</msg>
+<status status="PASS" starttime="20230705 11:07:22.711" endtime="20230705 11:07:22.711"/>
+</kw>
+<status status="PASS" starttime="20230705 11:07:22.706" endtime="20230705 11:07:22.712"/>
+</test>
+<test id="s1-t7" name="move file 3 from directory 2 to directory 1" line="34">
+<kw name="Join Path" library="OperatingSystem">
+<var>${source_path}</var>
+<arg>${out_dir}</arg>
+<arg>${dir_2}</arg>
+<arg>${file_3}</arg>
+<doc>Joins the given path part(s) to the given base path.</doc>
+<msg timestamp="20230705 11:07:22.714" level="INFO">${source_path} = outputs\second_dir\third_file</msg>
+<status status="PASS" starttime="20230705 11:07:22.714" endtime="20230705 11:07:22.714"/>
+</kw>
+<kw name="Join Path" library="OperatingSystem">
+<var>${target_path}</var>
+<arg>${out_dir}</arg>
+<arg>${dir_1}</arg>
+<arg>${file_3}</arg>
+<doc>Joins the given path part(s) to the given base path.</doc>
+<msg timestamp="20230705 11:07:22.714" level="INFO">${target_path} = outputs\first_dir\third_file</msg>
+<status status="PASS" starttime="20230705 11:07:22.714" endtime="20230705 11:07:22.714"/>
+</kw>
+<kw name="Move File" library="OperatingSystem">
+<arg>${source_path}</arg>
+<arg>${target_path}</arg>
+<doc>Moves the source file into the destination.</doc>
+<msg timestamp="20230705 11:07:22.717" level="INFO" html="true">Moved file from '&lt;a href="file://C:\Users\vnaganur\PycharmProjects\robot_framework\operating_system\outputs\second_dir\third_file"&gt;C:\Users\vnaganur\PycharmProjects\robot_framework\operating_system\outputs\second_dir\third_file&lt;/a&gt;' to '&lt;a href="file://C:\Users\vnaganur\PycharmProjects\robot_framework\operating_system\outputs\first_dir\third_file"&gt;C:\Users\vnaganur\PycharmProjects\robot_framework\operating_system\outputs\first_dir\third_file&lt;/a&gt;'.</msg>
+<status status="PASS" starttime="20230705 11:07:22.715" endtime="20230705 11:07:22.717"/>
+</kw>
+<status status="PASS" starttime="20230705 11:07:22.713" endtime="20230705 11:07:22.718"/>
+</test>
+<test id="s1-t8" name="copy file 3 from directory 1 to directory 2" line="38">
+<kw name="Join Path" library="OperatingSystem">
+<var>${source_path}</var>
+<arg>${out_dir}</arg>
+<arg>${dir_1}</arg>
+<arg>${file_3}</arg>
+<doc>Joins the given path part(s) to the given base path.</doc>
+<msg timestamp="20230705 11:07:22.720" level="INFO">${source_path} = outputs\first_dir\third_file</msg>
+<status status="PASS" starttime="20230705 11:07:22.720" endtime="20230705 11:07:22.720"/>
+</kw>
+<kw name="Join Path" library="OperatingSystem">
+<var>${target_path}</var>
+<arg>${out_dir}</arg>
+<arg>${dir_2}</arg>
+<arg>${file_3}</arg>
+<doc>Joins the given path part(s) to the given base path.</doc>
+<msg timestamp="20230705 11:07:22.721" level="INFO">${target_path} = outputs\second_dir\third_file</msg>
+<status status="PASS" starttime="20230705 11:07:22.721" endtime="20230705 11:07:22.721"/>
+</kw>
+<kw name="Copy File" library="OperatingSystem">
+<arg>${source_path}</arg>
+<arg>${target_path}</arg>
+<doc>Copies the source file into the destination.</doc>
+<msg timestamp="20230705 11:07:22.729" level="INFO" html="true">Copied file from '&lt;a href="file://C:\Users\vnaganur\PycharmProjects\robot_framework\operating_system\outputs\first_dir\third_file"&gt;C:\Users\vnaganur\PycharmProjects\robot_framework\operating_system\outputs\first_dir\third_file&lt;/a&gt;' to '&lt;a href="file://C:\Users\vnaganur\PycharmProjects\robot_framework\operating_system\outputs\second_dir\third_file"&gt;C:\Users\vnaganur\PycharmProjects\robot_framework\operating_system\outputs\second_dir\third_file&lt;/a&gt;'.</msg>
+<status status="PASS" starttime="20230705 11:07:22.721" endtime="20230705 11:07:22.730"/>
+</kw>
+<status status="PASS" starttime="20230705 11:07:22.719" endtime="20230705 11:07:22.730"/>
+</test>
+<status status="PASS" starttime="20230705 11:07:22.667" endtime="20230705 11:07:22.731"/>
+</suite>
+<statistics>
+<total>
+<stat pass="8" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="8" fail="0" skip="0" id="s1" name="Os">Os</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

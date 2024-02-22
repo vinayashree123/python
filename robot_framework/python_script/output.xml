@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.0.2 (Python 3.11.1 on win32)" generated="20230711 15:34:59.604" rpa="false" schemaversion="3">
+<suite id="s1" name="Robot" source="C:\Users\vnaganur\PycharmProjects\robot_framework\python_script\robot.robot">
+<test id="s1-t1" name="Testcase 2" line="9">
+<kw name="custom keyword" library="pythonfile">
+<var>${result}</var>
+<arg>${1}</arg>
+<arg>${2}</arg>
+<msg timestamp="20230711 15:34:59.636" level="INFO">${result} = 3</msg>
+<status status="PASS" starttime="20230711 15:34:59.636" endtime="20230711 15:34:59.636"/>
+</kw>
+<kw name="Should Be Equal" library="BuiltIn">
+<arg>${result}</arg>
+<arg>${3}</arg>
+<doc>Fails if the given objects are unequal.</doc>
+<status status="PASS" starttime="20230711 15:34:59.636" endtime="20230711 15:34:59.636"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${result}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20230711 15:34:59.636" endtime="20230711 15:34:59.636"/>
+</kw>
+<status status="PASS" starttime="20230711 15:34:59.635" endtime="20230711 15:34:59.636"/>
+</test>
+<status status="PASS" starttime="20230711 15:34:59.604" endtime="20230711 15:34:59.636"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Robot">Robot</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

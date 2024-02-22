@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.0.2 (Python 3.11.1 on win32)" generated="20240130 14:18:12.482" rpa="false" schemaversion="3">
+<suite id="s1" name="Interview Var" source="C:\Users\vnaganur\PycharmProjects\robot_framework\2023\webAutomation\VARIABLES\interview_var.robot">
+<test id="s1-t1" name="set variable" line="9">
+<kw name="Set Variable" library="BuiltIn">
+<var>${name}</var>
+<arg>vina</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<msg timestamp="20240130 14:18:12.514" level="INFO">${name} = vina</msg>
+<status status="PASS" starttime="20240130 14:18:12.514" endtime="20240130 14:18:12.514"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${name}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20240130 14:18:12.514" endtime="20240130 14:18:12.514"/>
+</kw>
+<status status="PASS" starttime="20240130 14:18:12.514" endtime="20240130 14:18:12.514"/>
+</test>
+<test id="s1-t2" name="scalar var demo" line="13">
+<kw name="Log To Console" library="BuiltIn">
+<arg>${var}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20240130 14:18:12.514" endtime="20240130 14:18:12.514"/>
+</kw>
+<status status="PASS" starttime="20240130 14:18:12.514" endtime="20240130 14:18:12.514"/>
+</test>
+<test id="s1-t3" name="List var demo" line="16">
+<for flavor="IN">
+<var>${i}</var>
+<value>@{list}</value>
+<iter>
+<var name="${i}">=</var>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${i}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20240130 14:18:12.514" endtime="20240130 14:18:12.514"/>
+</kw>
+<status status="PASS" starttime="20240130 14:18:12.514" endtime="20240130 14:18:12.514"/>
+</iter>
+<iter>
+<var name="${i}">1</var>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${i}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20240130 14:18:12.514" endtime="20240130 14:18:12.514"/>
+</kw>
+<status status="PASS" starttime="20240130 14:18:12.514" endtime="20240130 14:18:12.514"/>
+</iter>
+<iter>
+<var name="${i}">2</var>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${i}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20240130 14:18:12.514" endtime="20240130 14:18:12.514"/>
+</kw>
+<status status="PASS" starttime="20240130 14:18:12.514" endtime="20240130 14:18:12.514"/>
+</iter>
+<iter>
+<var name="${i}">3</var>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${i}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20240130 14:18:12.514" endtime="20240130 14:18:12.514"/>
+</kw>
+<status status="PASS" starttime="20240130 14:18:12.514" endtime="20240130 14:18:12.514"/>
+</iter>
+<iter>
+<var name="${i}">4</var>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${i}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20240130 14:18:12.514" endtime="20240130 14:18:12.529"/>
+</kw>
+<status status="PASS" starttime="20240130 14:18:12.514" endtime="20240130 14:18:12.529"/>
+</iter>
+<status status="PASS" starttime="20240130 14:18:12.514" endtime="20240130 14:18:12.529"/>
+</for>
+<status status="PASS" starttime="20240130 14:18:12.514" endtime="20240130 14:18:12.529"/>
+</test>
+<test id="s1-t4" name="accesing the list var" line="21">
+<kw name="Log To Console" library="BuiltIn">
+<arg>${list[0]}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20240130 14:18:12.529" endtime="20240130 14:18:12.535"/>
+</kw>
+<status status="PASS" starttime="20240130 14:18:12.529" endtime="20240130 14:18:12.535"/>
+</test>
+<test id="s1-t5" name="dictionary demo" line="24">
+<kw name="Log" library="BuiltIn">
+<arg>${dict_var.name}</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20240130 14:18:12.535" level="INFO">vina</msg>
+<status status="PASS" starttime="20240130 14:18:12.535" endtime="20240130 14:18:12.535"/>
+</kw>
+<status status="PASS" starttime="20240130 14:18:12.535" endtime="20240130 14:18:12.535"/>
+</test>
+<status status="PASS" starttime="20240130 14:18:12.482" endtime="20240130 14:18:12.535"/>
+</suite>
+<statistics>
+<total>
+<stat pass="5" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="5" fail="0" skip="0" id="s1" name="Interview Var">Interview Var</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

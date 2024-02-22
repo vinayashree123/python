@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.0.2 (Python 3.11.1 on win32)" generated="20240130 14:23:53.056" rpa="false" schemaversion="3">
+<suite id="s1" name="If Else" source="C:\Users\vnaganur\PycharmProjects\robot_framework\2023\webAutomation\CONDITIONAL_STATEMENT\if_else.robot">
+<test id="s1-t1" name="IF else Block" line="9">
+<if>
+<branch type="IF" condition="${num1} == ${num2}">
+<kw name="Log To Console" library="BuiltIn">
+<arg>both are equal</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="NOT RUN" starttime="20240130 14:23:53.072" endtime="20240130 14:23:53.072"/>
+</kw>
+<status status="NOT RUN" starttime="20240130 14:23:53.072" endtime="20240130 14:23:53.072"/>
+</branch>
+<branch type="ELSE">
+<kw name="Log To Console" library="BuiltIn">
+<arg>both are NOT equal</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20240130 14:23:53.072" endtime="20240130 14:23:53.072"/>
+</kw>
+<status status="PASS" starttime="20240130 14:23:53.072" endtime="20240130 14:23:53.072"/>
+</branch>
+<status status="PASS" starttime="20240130 14:23:53.072" endtime="20240130 14:23:53.072"/>
+</if>
+<status status="PASS" starttime="20240130 14:23:53.072" endtime="20240130 14:23:53.072"/>
+</test>
+<test id="s1-t2" name="if" line="16">
+<if>
+<branch type="IF" condition="1 == 1">
+<kw name="Log To Console" library="BuiltIn">
+<arg>This line IS executed.</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20240130 14:23:53.072" endtime="20240130 14:23:53.072"/>
+</kw>
+<status status="PASS" starttime="20240130 14:23:53.072" endtime="20240130 14:23:53.072"/>
+</branch>
+<status status="PASS" starttime="20240130 14:23:53.072" endtime="20240130 14:23:53.072"/>
+</if>
+<status status="PASS" starttime="20240130 14:23:53.072" endtime="20240130 14:23:53.072"/>
+</test>
+<status status="PASS" starttime="20240130 14:23:53.056" endtime="20240130 14:23:53.088"/>
+</suite>
+<statistics>
+<total>
+<stat pass="2" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="2" fail="0" skip="0" id="s1" name="If Else">If Else</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

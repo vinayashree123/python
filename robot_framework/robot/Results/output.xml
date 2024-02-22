@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.0.2 (Python 3.11.1 on win32)" generated="20230704 12:32:49.474" rpa="false" schemaversion="3">
+<suite id="s1" name="Robotscript" source="C:\Users\vnaganur\PycharmProjects\robot_framework\robot\Tests\robotscript.robot">
+<test id="s1-t1" name="should be able to access &quot;Team&quot; page" line="15">
+<kw name="Begin web test" library="common" type="SETUP">
+<kw name="Open Browser" library="Selenium2Library">
+<arg>about:blank</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20230704 12:32:49.644" level="INFO">Opening browser 'chrome' to base url 'about:blank'.</msg>
+<msg timestamp="20230704 12:32:49.648" level="INFO">Executing: C:\Users\vnaganur\PycharmProjects\robot_framework\venv\Lib\site-packages\selenium\webdriver\common\windows\selenium-manager.exe --browser chrome --output json</msg>
+<status status="PASS" starttime="20230704 12:32:49.644" endtime="20230704 12:32:52.298"/>
+</kw>
+<status status="PASS" starttime="20230704 12:32:49.643" endtime="20230704 12:32:52.299"/>
+</kw>
+<kw name="Log" library="BuiltIn">
+<arg>testcase 1</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20230704 12:32:52.299" level="INFO">testcase 1</msg>
+<status status="PASS" starttime="20230704 12:32:52.299" endtime="20230704 12:32:52.299"/>
+</kw>
+<kw name="Go to landing page" library="robotApp">
+<kw name="Navigate To" library="landing_robot">
+<kw name="Go To" library="Selenium2Library">
+<arg>${URL}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<msg timestamp="20230704 12:32:52.300" level="INFO">Opening url 'https://automationplayground.com/front-office/'</msg>
+<status status="PASS" starttime="20230704 12:32:52.300" endtime="20230704 12:32:59.506"/>
+</kw>
+<status status="PASS" starttime="20230704 12:32:52.300" endtime="20230704 12:32:59.506"/>
+</kw>
+<kw name="verify page loaded" library="landing_robot">
+<kw name="Wait Until Page Contains Element" library="Selenium2Library">
+<arg>${NAVIGATE_TO_LANDING_PAGE}</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20230704 12:32:59.506" endtime="20230704 12:32:59.525"/>
+</kw>
+<status status="PASS" starttime="20230704 12:32:59.506" endtime="20230704 12:32:59.525"/>
+</kw>
+<status status="PASS" starttime="20230704 12:32:52.300" endtime="20230704 12:32:59.525"/>
+</kw>
+<kw name="Go to &quot;Team&quot; page" library="robotApp">
+<kw name="select &quot;Team&quot; page" library="TopNov">
+<kw name="Click Element" library="Selenium2Library">
+<arg>${TOP_NOV_LINK}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230704 12:32:59.526" level="INFO">Clicking element 'css=#bs-example-navbar-collapse-1 &gt; ul &gt; li:nth-child(5) &gt; a'.</msg>
+<status status="PASS" starttime="20230704 12:32:59.526" endtime="20230704 12:32:59.609"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230704 12:33:02.611" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20230704 12:32:59.609" endtime="20230704 12:33:02.611"/>
+</kw>
+<status status="PASS" starttime="20230704 12:32:59.526" endtime="20230704 12:33:02.611"/>
+</kw>
+<kw name="verify page loaded" library="Team">
+<kw name="Wait Until Page Contains Element" library="Selenium2Library">
+<arg>${NAVIGATE_TO_TEAM_PAGE}</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20230704 12:33:02.611" endtime="20230704 12:33:02.628"/>
+</kw>
+<status status="PASS" starttime="20230704 12:33:02.611" endtime="20230704 12:33:02.628"/>
+</kw>
+<status status="PASS" starttime="20230704 12:32:59.526" endtime="20230704 12:33:02.629"/>
+</kw>
+<kw name="End web test" library="common" type="TEARDOWN">
+<kw name="Close All Browsers" library="Selenium2Library">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" starttime="20230704 12:33:02.630" endtime="20230704 12:33:08.954"/>
+</kw>
+<status status="PASS" starttime="20230704 12:33:02.629" endtime="20230704 12:33:08.954"/>
+</kw>
+<doc>this is test 1</doc>
+<tag>test1</tag>
+<status status="PASS" starttime="20230704 12:32:49.643" endtime="20230704 12:33:08.955"/>
+</test>
+<test id="s1-t2" name="&quot;Team&quot; should meet the requirements" line="23">
+<kw name="Begin web test" library="common" type="SETUP">
+<kw name="Open Browser" library="Selenium2Library">
+<arg>about:blank</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20230704 12:33:08.957" level="INFO">Opening browser 'chrome' to base url 'about:blank'.</msg>
+<msg timestamp="20230704 12:33:08.960" level="INFO">Executing: C:\Users\vnaganur\PycharmProjects\robot_framework\venv\Lib\site-packages\selenium\webdriver\common\windows\selenium-manager.exe --browser chrome --output json</msg>
+<status status="PASS" starttime="20230704 12:33:08.956" endtime="20230704 12:33:11.414"/>
+</kw>
+<status status="PASS" starttime="20230704 12:33:08.956" endtime="20230704 12:33:11.414"/>
+</kw>
+<kw name="Log" library="BuiltIn">
+<arg>testcase 2</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20230704 12:33:11.415" level="INFO">testcase 2</msg>
+<status status="PASS" starttime="20230704 12:33:11.415" endtime="20230704 12:33:11.415"/>
+</kw>
+<kw name="Go to landing page" library="robotApp">
+<kw name="Navigate To" library="landing_robot">
+<kw name="Go To" library="Selenium2Library">
+<arg>${URL}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<msg timestamp="20230704 12:33:11.415" level="INFO">Opening url 'https://automationplayground.com/front-office/'</msg>
+<status status="PASS" starttime="20230704 12:33:11.415" endtime="20230704 12:33:18.576"/>
+</kw>
+<status status="PASS" starttime="20230704 12:33:11.415" endtime="20230704 12:33:18.576"/>
+</kw>
+<kw name="verify page loaded" library="landing_robot">
+<kw name="Wait Until Page Contains Element" library="Selenium2Library">
+<arg>${NAVIGATE_TO_LANDING_PAGE}</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20230704 12:33:18.577" endtime="20230704 12:33:18.599"/>
+</kw>
+<status status="PASS" starttime="20230704 12:33:18.576" endtime="20230704 12:33:18.599"/>
+</kw>
+<status status="PASS" starttime="20230704 12:33:11.415" endtime="20230704 12:33:18.599"/>
+</kw>
+<kw name="Go to &quot;Team&quot; page" library="robotApp">
+<kw name="select &quot;Team&quot; page" library="TopNov">
+<kw name="Click Element" library="Selenium2Library">
+<arg>${TOP_NOV_LINK}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230704 12:33:18.600" level="INFO">Clicking element 'css=#bs-example-navbar-collapse-1 &gt; ul &gt; li:nth-child(5) &gt; a'.</msg>
+<status status="PASS" starttime="20230704 12:33:18.600" endtime="20230704 12:33:18.672"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230704 12:33:21.673" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20230704 12:33:18.673" endtime="20230704 12:33:21.673"/>
+</kw>
+<status status="PASS" starttime="20230704 12:33:18.600" endtime="20230704 12:33:21.673"/>
+</kw>
+<kw name="verify page loaded" library="Team">
+<kw name="Wait Until Page Contains Element" library="Selenium2Library">
+<arg>${NAVIGATE_TO_TEAM_PAGE}</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20230704 12:33:21.674" endtime="20230704 12:33:21.690"/>
+</kw>
+<status status="PASS" starttime="20230704 12:33:21.673" endtime="20230704 12:33:21.690"/>
+</kw>
+<status status="PASS" starttime="20230704 12:33:18.600" endtime="20230704 12:33:21.690"/>
+</kw>
+<kw name="validate &quot;Team&quot; page" library="robotApp">
+<kw name="verify page contents" library="Team">
+<kw name="Get Text" library="Selenium2Library">
+<var>${ELEMENT_TEXT}</var>
+<arg>${NAVIGATE_TO_TEAM_PAGE}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20230704 12:33:21.727" level="INFO">${ELEMENT_TEXT} = OUR AMAZING TEAM</msg>
+<status status="PASS" starttime="20230704 12:33:21.691" endtime="20230704 12:33:21.728"/>
+</kw>
+<kw name="Should Be Equal As Strings" library="BuiltIn">
+<arg>${ELEMENT_TEXT}</arg>
+<arg>Our Amazing Team</arg>
+<arg>ignore_case=true</arg>
+<doc>Fails if objects are unequal after converting them to strings.</doc>
+<status status="PASS" starttime="20230704 12:33:21.728" endtime="20230704 12:33:21.728"/>
+</kw>
+<status status="PASS" starttime="20230704 12:33:21.691" endtime="20230704 12:33:21.728"/>
+</kw>
+<status status="PASS" starttime="20230704 12:33:21.691" endtime="20230704 12:33:21.728"/>
+</kw>
+<kw name="End web test" library="common" type="TEARDOWN">
+<kw name="Close All Browsers" library="Selenium2Library">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" starttime="20230704 12:33:21.729" endtime="20230704 12:33:28.076"/>
+</kw>
+<status status="PASS" starttime="20230704 12:33:21.729" endtime="20230704 12:33:28.076"/>
+</kw>
+<doc>this is test 2</doc>
+<tag>test2</tag>
+<status status="PASS" starttime="20230704 12:33:08.955" endtime="20230704 12:33:28.077"/>
+</test>
+<doc>This test suite contain the robotframework testcase</doc>
+<status status="PASS" starttime="20230704 12:32:49.476" endtime="20230704 12:33:28.079"/>
+</suite>
+<statistics>
+<total>
+<stat pass="2" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="1" fail="0" skip="0">test1</stat>
+<stat pass="1" fail="0" skip="0">test2</stat>
+</tag>
+<suite>
+<stat pass="2" fail="0" skip="0" id="s1" name="Robotscript">Robotscript</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
